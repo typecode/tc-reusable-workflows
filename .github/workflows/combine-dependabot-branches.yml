@@ -10,14 +10,17 @@ on:
       branchPrefix:
         description: 'Branch prefix to find combinable PRs based on'
         required: true
+        type: string
         default: 'dependabot'
       combineBranchName:
         description: 'Name of the branch to combine PRs into'
         required: true
+        type: string
         default: 'dependency-updates'
       ignoreLabel:
         description: 'Exclude PRs with this label'
         required: true
+        type: string
         default: 'nocombine'
 
 jobs:
