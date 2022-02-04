@@ -9,7 +9,7 @@ This workflow takes three inputs
 
 Here is an example of how to call the reusable workflow within your own workflow:
 ```yaml
-      - uses: typecode/typecode-shared-workflows/.github/workflows/combine-dependabot-branches/combine-dependabot-branches@master.yml
+      - uses: typecode/typecode-reusable-workflows/.github/workflows/combine-dependabot-branches.yml@master
         with:
           branchPrefix: ${{ env.BRANCH_PREFIX }}
           combineBranchName: ${{ env.COMBINE_BRANCH_NAME }}
